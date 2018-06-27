@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{{ project_lst_max_grade }}
+
+    {% for item in project_lst_max_grade.split(',') %}
+    <ul>
+        <li>
+            {{ item[0] }}/{{ item[1] }}            
+        </li>                 
+    </ul>
+    {% endfor %}
+</body>
+</html>

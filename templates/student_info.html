@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Info</title>
+</head>
+<body>
+    <h1>{{ first }} {{ last }}</h1>
+
+    <p>Github Account: {{ github }}</p>
+
+    {% for item in project_lst %}
+    <ul>
+        <li>
+            <a href="/project?title={{ item[0] }}">{{ item[0] }}</a>/{{ item[1] }}            
+        </li>                 
+    </ul>
+    {% endfor %}
+</body>
+</html>
